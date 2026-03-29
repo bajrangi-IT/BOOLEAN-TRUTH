@@ -1,4 +1,4 @@
-# 🛡️ TrustGuard | Forensic Reality Auditor
+# 🛡️ BOOLEAN TRUTH | Forensic Reality Auditor
 
 TrustGuard is a high-performance backend API built with Go (Golang) that leverages Google Gemini AI to evaluate the safety, reliability, and truthfulness of text statements.
 

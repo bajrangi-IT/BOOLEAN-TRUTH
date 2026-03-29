@@ -1,0 +1,23 @@
+# Environment Variables (NEVER commit these)
+backend/.env
+.env
+
+# Go Build Artifacts
+backend/main.exe
+backend/*.exe
+backend/*.out
+
+# Go Vendor
+vendor/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go module cache
+go.sum

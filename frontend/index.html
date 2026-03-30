@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrustGuard — Forensic Reality Auditor</title>
-    <meta name="description" content="AI-powered forensic reality auditor. Verify any statement for truthfulness, toxicity, and spam using Gemini 2.5 Flash.">
+    <meta name="description"
+        content="AI-powered forensic reality auditor. Verify any statement for truthfulness, toxicity, and spam using Gemini 2.5 Flash.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Animated background -->
@@ -26,7 +31,10 @@
         <header class="site-header">
             <div class="logo">
                 <div class="logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
                 </div>
                 <div class="logo-text">
                     <span class="logo-title">BOOLEAN TRUTH</span>
@@ -48,7 +56,8 @@
                     Verify Any <span class="gradient-text">Statement</span><br>With AI Precision
                 </h1>
                 <p class="hero-subtitle">
-                    Enter a claim, and our forensic AI will audit it for truth, toxicity, and reliability — with cited reasoning.
+                    Enter a claim, and our forensic AI will audit it for truth, toxicity, and reliability — with cited
+                    reasoning.
                 </p>
             </section>
 
@@ -56,20 +65,24 @@
             <section class="input-section">
                 <div class="glass-card input-card">
                     <div class="input-label">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
                         Statement to Audit
                     </div>
-                    <textarea
-                        id="claim-input"
-                        placeholder="e.g. &quot;The Great Wall of China is visible from space.&quot;"
-                        rows="3"
-                        spellcheck="false"
-                    ></textarea>
+                    <textarea id="claim-input"
+                        placeholder="e.g. &quot;The Great Wall of China is visible from space.&quot;" rows="3"
+                        spellcheck="false"></textarea>
                     <div class="input-actions">
                         <div class="char-count"><span id="char-count">0</span> characters</div>
                         <button id="verify-btn" class="btn-primary">
                             <span class="btn-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                                </svg>
                                 Run Forensic Audit
                             </span>
                             <div class="btn-loader hidden">
@@ -114,7 +127,12 @@
                         <!-- Quick Verdict -->
                         <div class="analysis-box reasoning-box">
                             <div class="box-header">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 16v-4" />
+                                    <path d="M12 8h.01" />
+                                </svg>
                                 Quick Verdict
                             </div>
                             <p id="reasoning-text" class="box-content"></p>
@@ -123,7 +141,10 @@
                         <!-- Score Meters -->
                         <div class="analysis-box meters-box">
                             <div class="box-header">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                </svg>
                                 Safety Scores
                             </div>
                             <div class="meter-row">
@@ -150,7 +171,11 @@
                     <!-- Detailed Explanation -->
                     <div class="analysis-box full-width-box">
                         <div class="box-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
                             Detailed Analysis
                         </div>
                         <p id="explanation-text" class="box-content"></p>
@@ -159,7 +184,11 @@
                     <!-- Sources -->
                     <div class="analysis-box full-width-box sources-box">
                         <div class="box-header">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                            </svg>
                             Knowledge Sources
                         </div>
                         <div id="sources-list" class="sources-list"></div>
@@ -178,4 +207,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
